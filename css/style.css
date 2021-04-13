@@ -116,8 +116,16 @@ h3{
 /* Grid */
 .grid{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr); 
     gap: 2rem;
+}
+
+@media (max-width:400px ) {
+    .grid{
+       display: flex;
+       flex-direction: column;
+    }
+    
 }
 
 @media (min-width: 768px) {
@@ -288,5 +296,13 @@ h3{
 .formulario__submit:hover{
     cursor: pointer;
     background-color: var(--secundarioOscuro);
+}
+
+@media (max-width:400px ) {
+    .formulario{
+       display: flex;
+       flex-direction: column;
+    }
+    
 }
 
